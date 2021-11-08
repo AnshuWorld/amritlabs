@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+            height: 22vh;
+        }
+        body{
+            background-image: linear-gradient(rgba(100,9,30,0.7),rgba(4,9,100,0.7),rgba(4,100,30,0.7)),url('salt.jpg');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: whitesmoke;
+            background-attachment: fixed;
+        }
+
+        .header{
+            height: 100vh;
+            width: 100%;
+        }
+        #nav{
+            height: 50px;
+            background-color: red;
+        }
+        #nav ul li{
+            float: left;
+            padding: 1% 1%;
+            background-color: crimson;
+            
+        }
+        #nav ul a li{
+            text-decoration: none;
+            color: cornsilk;
+            font-weight: 900;
+        }
+        #nav ul{
+            list-style: none;
+            margin-top: 10px;
+        }
+        #nav ul li ul{
+            display: none;
+        }
+        #nav ul li:hover ul{
+            display:block;
+            position: absolute;
+            z-index:100;
+        }
+        #nav ul li:hover ul li{
+            float:none;
+            background-color: cyan;
+            padding: 10px 50px;
+            border: 2px solid whitesmoke;
+            color: tomato;
+        }
+        #nav ul li:hover ul li a{
+            text-decoration: none;
+        }
+        #content, #content1, #content2{
+           height: 380px;
+           max-width: 300px;
+           padding:10px;
+           margin: 80px;
+           float: left;
+           border: 10px solid tomato;
+           outline: 5px solid green;
+           box-sizing: border-box;
+           overflow: auto;
+        }
+        #content a, #content1 a, #content2 a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: large;
+            font-weight: 900;
+            background-color: blue;
+            padding:10px;
+            box-sizing: border-box;
+           
+        }
+        #content:hover, #content1:hover, #content2:hover{
+            background-image: linear-gradient(to top left,yellow,hotpink,tomato);
+            color: rgba(0,0,0,1);
+            border: 10px solid green;
+            outline: 5px solid tomato;
+            transition: 3s;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <center>
+            <img src="2.jpg"/>
+            <h1>AMRITLABs</h1>
+        </center>
+    </div>
+    <div class="header">
+        <div id="nav">
+            <ul>
+                <li>
+                    HOME
+                    <ul>
+                        <li>
+                            <a href="#content">
+                                Physics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#content1">
+                                Biology
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#content2">
+                                Chemistry
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    ABOUT US
+                </li>
+                <li>
+                    TESTINOMIALS
+                </li>
+                <li>
+                    CONTACTS
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1 align="center">
+                Physics 
+            </h1>
+            <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem qui debitis. Perspiciatis ex, eveniet libero iusto mollitia tempora labore, accusantium laborum magnam accusamus quidem animi enim optio eum nulla.
+            </p>
+            <br><br>
+            <a href="">
+                Go there
+            </a>
+        </div>
+        <div id="content1">
+            <h1 align="center">
+                Biology 
+            </h1>
+            <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem qui debitis. Perspiciatis ex, eveniet libero iusto mollitia tempora labore, accusantium laborum magnam accusamus quidem animi enim optio eum nulla.
+            </p>
+            <br><br>
+            <a href="">
+                Go there
+            </a>
+        </div>
+        <div id="content2">
+            <h1 align="center">
+                Chemistry 
+            </h1>
+            <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem qui debitis. Perspiciatis ex, eveniet libero iusto mollitia tempora labore, accusantium laborum magnam accusamus quidem animi enim optio eum nulla.
+            </p>
+            <br><br>
+            <a href="">
+                Go there
+            </a>
+        </div>
+    </div>
+    <div id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.558993960147!2d86.13195522884433!3d22.806548811004454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4f942db25c5%3A0xe8f2e1fde7beeba!2sHatiyadih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1635736974272!5m2!1sen!2sin" width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+</html>
